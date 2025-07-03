@@ -5,11 +5,12 @@
 /* Colours */
 
 :root{
-    --endura-orange: #FA5430;
-    --endura-yellow: #FDD76E;
-    --sky-blue: #76A2D1;
-    --warm-brown: #511F00;
+    --remaro-orange: #ED714A;
+    --lemon: #F8F1C6;
+    --baby-blue: #C9DDFF;
+    --tomato-red: #DE3F3F;
     --coal-black: #000000;
+    --white: #ffffff;
 }
 
 /* All */
@@ -26,8 +27,19 @@ body {
     font-style: normal;
 }
 
+
 /* Top Nav */
 
+
+
+#top-nav{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+    grid-template-rows: 20fr;
+    height: 70px;
+    border: 1px solid #000000;
+    background-color: beige;
+}
 
 
 /* Landing Page Layout */
