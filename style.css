@@ -22,8 +22,8 @@ html{
 
 body {
     
-    font-family: "helvetica", sans-serif;
-    font-weight: 800;
+    font-family: "helvetica-lt-pro", sans-serif;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -31,26 +31,28 @@ body {
 /* Top Nav */
 
 
+header{
+    background-color: rgb(85, 85, 43);
+    background: #ffffff;
+}
 
 #top-nav{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20% ;
     grid-template-rows: 20fr;
     height: 70px;
-    border: 1px solid #000000;
-    background-color: beige;
+
 }
 
 
 /* Landing Page Layout */
 
 #hero-background{
+    display: flex;
     background-image:url(images/Firefly_a\ image\ for\ a\ website\ landing\ page\ that\ sells\ reycled\ clothing\ \,\ with\ a\ beige\ backgro\ 323628.jpg);
-    height: 1000px ;
-    background-size: cover;
-    background-position: top;
-
-
+    height: 900px ;
+    background-size: 100%;
+    background-position: bottom;
 }
 
 /* Home Page Layout */
@@ -62,3 +64,24 @@ body {
 /* Info Layout */
 
 /* Bag Layout */
+
+/* Type */
+
+h1{
+    font-family: "helvetica-lt-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3{
+    font-family: "helvetica-lt-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h4{
+    font-family: "helvetica-lt-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
