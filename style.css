@@ -2,13 +2,41 @@
     box-sizing: border-box;
 }
 
+/* Colours */
+
+:root{
+    --endura-orange: #FA5430;
+    --endura-yellow: #FDD76E;
+    --sky-blue: #76A2D1;
+    --warm-brown: #511F00;
+    --coal-black: #000000;
+}
+
+/* All */
+
+html{
+    font-size: 100%;
+    min-width: 390px;
+}
+
+body {
+    
+    font-family: "helvetica", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Top Nav */
+
+
+
 /* Landing Page Layout */
 
 #hero-background{
     background-image:url(images/Firefly_a\ image\ for\ a\ website\ landing\ page\ that\ sells\ reycled\ clothing\ \,\ with\ a\ beige\ backgro\ 323628.jpg);
     height: 1000px ;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 
 
 }
