@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M7.91,7.43l9.9,9.9">
+    <animate accumulate="none" additive="replace" attributeName="stroke-dashoffset" calcMode="linear" dur="0.4s" fill="freeze" restart="always" values="16;0"/>
+  </path>
+  <path class="st0" d="M17.81,7.43l-9.9,9.9">
+    <animate accumulate="none" additive="replace" attributeName="stroke-dashoffset" begin="0.4s" calcMode="linear" dur="0.4s" fill="freeze" restart="always" values="16;0"/>
+  </path>
+</svg>

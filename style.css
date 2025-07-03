@@ -55,6 +55,18 @@ header{
     background-position: bottom;
 }
 
+#plain-remaro{
+    max-height: 180px;
+    min-height: 20px;
+}
+
+#section-1-text{
+    display: flex;
+    justify-content: baseline;
+}
+
+
+
 /* Home Page Layout */
 
 /* Recycle Layout */
@@ -71,12 +83,22 @@ h1{
     font-family: "helvetica-lt-pro", sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 130pt;
+    margin-top: 0;
+}
+
+h2{
+    font-family: "helvetica-lt-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40pt;
 }
 
 h3{
     font-family: "helvetica-lt-pro", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font: size 20pt;
 }
 
 
