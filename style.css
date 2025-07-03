@@ -56,6 +56,7 @@ header{
 }
 
 #plain-remaro{
+    display: flex;
     max-height: 180px;
     min-height: 20px;
 }
