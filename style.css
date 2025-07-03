@@ -4,6 +4,15 @@
 
 /* Landing Page Layout */
 
+#hero-background{
+    background-image:url(images/Firefly_a\ image\ for\ a\ website\ landing\ page\ that\ sells\ reycled\ clothing\ \,\ with\ a\ beige\ backgro\ 323628.jpg);
+    height: 1000px ;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
 /* Home Page Layout */
 
 /* Recycle Layout */
