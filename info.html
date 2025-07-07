@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remaro</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
-    <link rel="stylesheet" href="script.js">
     
 
-    <link rel="stylesheet" href="landing.html">
     <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="main.html">
     <link rel="stylesheet" href="recycle.html">
     <link rel="stylesheet" href="info.html">
     <link rel="stylesheet" href="shop.html">
+    <link rel="stylesheet" href="step-1.html">
+    <link rel="stylesheet" href="step-2.html">
+    <link rel="stylesheet" href="step-3.html">
+    <link rel="stylesheet" href="step-1-part2.html">
 
     <link rel="stylesheet" href="https://use.typekit.net/yox1klv.css">
     
@@ -22,17 +26,17 @@
 <body>
     <header>
 
-        <section id="top-nav">
+        <section>
 
-            <img height="20px" src="images/Remaro-Logo-colour.png" alt="">
-            <a href="index.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <a href="recycle.html">Recycle</a>
-            <a href="info.html">Info</a>
-            <input id="search-bar" type="text" placeholder="Anything specific in mind?">
-            <img height="30px" src="images/tabler--settings.svg" alt="">
-            <img height="30px" src="images/material-symbols--account-circle.svg" alt="">
-            <img height="30px" src="images/famicons--bag.svg" alt="">
+            <nav id="top-nav">
+              <a id="menu" href="#"><img src="images/material-symbols--menu-rounded.svg" alt=""></a>
+              <a id="Home" href="main.html">Home</a>
+              <a id="shop" href="#">Shop</a>
+              <a id="recycle" href="recycle.html">Recycle</a>
+              <a id="info" href="info.html">Info</a>
+              <input id="search-bar" type="text" placeholder="Anything specific in mind?">
+              <a href="#"><img height="30px" src="images/famicons--bag.svg" alt=""></a>
+            </nav>
 
         </section>
 
@@ -84,15 +88,17 @@
     </main>
 
     <footer>
+        <img id="bottom-logo" src="images/Remaro-Logo-colour.png" alt="">
+        <div id="bottom-nav">
 
-        <div class="bottom-nav">
-
-            <li><a href="http://">Home </a></li> 
-            <li><a href="http://">Shop </a></li> 
-            <li><a href="http://">Recycle </a></li> 
-            <li><a href="http://">Info </a></li> 
+            <a href="main.html">Home </a> 
+            <a href="#">Shop </a>
+            <a href="recycle.html">Recycle </a>
+            <a href="info.html">Info </a>
+            <a href="#">Account </a>
+            <a href="#">Settings </a>
         </div>
-        <h6> &#169; Remaro 2025</h6>
+        <h6 id="cc-bottom" > &#169; Remaro 2025</h6>
 
     </footer>
 </body>
