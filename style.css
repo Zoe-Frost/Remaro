@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 /* Colours */
@@ -17,7 +18,7 @@
 
 html{
     font-size: 100%;
-    min-width: 390px;
+    min-width: 790px;
 }
 
 body {
@@ -32,53 +33,785 @@ body {
 
 
 header{
-    background-color: rgb(85, 85, 43);
-    background: #ffffff;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    min-width: 1440px;
+    height: 2cm;
+
 }
 
 #top-nav{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20% ;
-    grid-template-rows: 20fr;
-    height: 70px;
-
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: .5cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+header a:hover {
+    color: var(--tomato-red);
+}
+
+
+
+header a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 18pt;
+    font-weight: 400;
+}
+
+
+#search-bar{
+    grid-column-start: 6;
+    grid-column-end: 6;
+    margin-bottom: 0;
+    width: 6cm;
+    height: .8cm;
+    border-width: 1mm;
+    border-color: var(--lemon);
+    border-color: #000000;
+    border-style: double;
+}
+
+
+/* Bottom Nav */
+
+#bottom-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 35px;
+}
+
+#bottom-nav a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 16pt;
+    font-weight: 400;
+}
+
+#bottom-nav a:hover{
+    color: var(--tomato-red);
+}
+
+
+#bottom-logo{
+    display: flex;
+    width: 250px;
+    padding-left: 35px;
+    padding-top: 20px;
+}
+
+footer{
+    padding-bottom: 10px;
+}
+
+#cc-bottom{
+    display: flex;
+    justify-content: center;
+    font-size: 14pt;
+    font-weight: 200;
+}
 
 /* Landing Page Layout */
 
 #hero-background{
     display: flex;
     background-image:url(images/Firefly_a\ image\ for\ a\ website\ landing\ page\ that\ sells\ reycled\ clothing\ \,\ with\ a\ beige\ backgro\ 323628.jpg);
-    height: 900px ;
-    background-size: 100%;
+    height: 800px ;
+    background-size: 110%;
     background-position: bottom;
 }
 
-#plain-remaro{
-    display: flex;
-    max-height: 180px;
-    min-height: 20px;
+#landing-logo{
+    margin-top: 600px;
+    margin-left: 500px;
+    width: 500px;
 }
+
+/* Home page layout */
 
 #section-1-text{
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 300px, 500px;
+    padding-top: 400px;
+}
+
+#plain-remaro{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    max-height: 420px;
+    padding-left: 10px;
+}
+
+
+#main-recycle-info{
     display: flex;
-    justify-content: baseline;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#image-1{
+    height: 190px;
+    width: 190px;
+}
+
+#image-2{
+    height: 190px;
+    width: 190px;
+}
+
+#image-3{
+    height: 190px;
+    width: 190px;
+} /* Not sure why but couldnt make then square*/
+
+
+#rewards{
+    padding-top: 40px;
+}
+
+#start{
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: var(--lemon);
+    border: none;
+    border-radius: 12pt;
+    font-family:"helvetica-lt-pro", sans-serif ;
+    font-size: 18pt;
+    font-weight: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) ;
+    cursor: pointer;
+}
+
+#start:hover{
+    box-shadow: 0 6 16 rgba(0, 0, 0, 0.3);
+    background-color: var(--baby-blue);
+}
+
+#shop-section{
+    padding-top: 60px;
+    padding-left: 35px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 40% 10% 40% 10%;
+}
+
+
+#shop-1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 
 
-/* Home Page Layout */
+#tops{
+    padding-top: 20px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#shop-2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+#dress{
+    padding-top: 20px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+#shop-3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+
+#pants{
+    padding-top: 20px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+
+#shop-4{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+#shorts{
+    padding-top: 20px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+#shop-5{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+
+#outwear{
+    padding-top: 20px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+
+#shop-6{
+    height: 200px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+
+#swim{
+    padding-top: 20px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+
+
+
+#shop-7{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: 200px;
+}
+
+
+
+#shoes{
+    padding-top: 20px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+
+
+#shop-8{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: 200px;
+}
+
+
+#accessories{
+    padding-top: 20px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
 
 /* Recycle Layout */
 
-/* Shop Layout */
+#recycle-background{
+    background-image:url(images/Firefly_a\ image\ for\ a\ website\ loading\ page\ that\ sells\ reycled\ clothing\ and\ you\ can\ donate\ tp\ \ 99434.jpg);
+    height: 800px ;
+    background-size: 100%;
+    background-position: center;
+}
 
-/* Info Layout */
+#cover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
 
-/* Bag Layout */
 
-/* Type */
+
+#recycle-list{
+    list-style-type: decimal;
+}
+
+
+#recycle-buttons{
+    padding-top: 35px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    
+}
+
+#learn-more{
+    margin-left: 20px;
+    margin-bottom: 500px;
+    margin-top: 20px;
+    background-color: var(--coal-black);
+    color: #ffffff;
+    border: none;
+    border-radius: 12pt;
+    font-family:"helvetica-lt-pro", sans-serif ;
+    font-size: 18pt;
+    font-weight: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) ;
+    cursor: pointer;
+}
+
+#get-started{
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 400px;
+    background-color: var(--lemon);
+    border: none;
+    border-radius: 12pt;
+    font-family:"helvetica-lt-pro", sans-serif ;
+    font-size: 18pt;
+    font-weight: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) ;
+    cursor: pointer;
+}
+
+#or-inbetween{
+    display: flex;
+    padding-top: 20px;
+
+    padding-left: 20px;
+    justify-content: center;
+    font-family: "helvetica-lt-pro", sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+
+#get-started:hover{
+    box-shadow: 0 6 16 rgba(0, 0, 0, 0.3);
+    background-color: var(--baby-blue);
+}
+
+/* Step 1 Layout */
+
+#the-number-system{
+    display: grid;
+    grid-template-columns: 40% 40% 10% 10%;
+    grid-template-rows: 20% 20% 20% 20% 20% 20% 20%;
+    background-color: #ffffff;
+    border: #000000;
+    border-style: ridge;
+    padding-bottom: 80px;
+}
+
+#number-system-background{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#next{
+    margin-left: 1235px;
+    margin-top: 100px;
+    margin-bottom: 400px;
+    background-color: var(--lemon);
+    border: none;
+    border-radius: 12pt;
+    font-family:"helvetica-lt-pro", sans-serif ;
+    font-size: 18pt;
+    font-weight: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) ;
+    cursor: pointer;
+}
+
+#next:hover{
+    box-shadow: 0 6 16 rgba(0, 0, 0, 0.3);
+    background-color: var(--baby-blue);
+}
+
+#top-number{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+
+#bottoms-number{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#outwear-number{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+
+#swim-number{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+
+#shoe-number{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 5;
+
+}
+
+
+#acessorie-number{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+#other-number{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 7;
+    grid-row-end: 7;
+}
+
+
+#price-1{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+#price-2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+#price-3{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+
+#price-4{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+
+#price-5{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+
+
+
+#price-6{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+
+
+#price-7{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 7;
+}
+
+
+
+
+#arrow-down-1{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: #000000;
+    border-style: ridge;
+}
+
+
+#arrow-down-2{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: #000000;
+    border-style: ridge;
+}
+
+#arrow-down-3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border: #000000;
+    border-style: ridge;
+}
+
+#arrow-down-4{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    border: #000000;
+    border-style: ridge;
+}
+
+#arrow-down-5{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    border: #000000;
+    border-style: ridge;
+}
+
+#arrow-down-6{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    border: #000000;
+    border-style: ridge;
+}
+
+#arrow-down-7{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    border: #000000;
+    border-style: ridge;
+}
+
+
+#zero-one{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: #000000;
+    border-style: ridge;
+}
+
+
+
+#zero-two{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: #000000;
+    border-style: ridge;
+}
+
+
+
+#zero-three{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border: #000000;
+    border-style: ridge;
+}
+
+
+
+#zero-four{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    border: #000000;
+    border-style: ridge;
+}
+
+
+
+#zero-five{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    border: #000000;
+    border-style: ridge;
+}
+
+
+
+#zero-six{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    border: #000000;
+    border-style: ridge;
+}
+
+
+
+#zero-seven{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    border: #000000;
+    border-style: ridge;
+}
+
+
+
+
+
+
+
+
+/* Step 2 Layout */
+
+#the-number-system-2{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 30% 30% 30% 30% ;
+    background-color: #ffffff;
+    border: #000000;
+    border-style: ridge;
+    padding-bottom: 30px;
+}
+
+
+#post-1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#post-2{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#post-3{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+#post-4{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+
+}
+
+
+#one{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding-top: 5px;
+
+}
+
+#two{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+}
+
+#three {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+
+}
+
+#four{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+
+}
+/* Step 3 Layout */
+
+#the-number-system-3{
+    background-color: white;
+    list-style-type: decimal;
+    padding-left: 35px;
+    padding-bottom: 20px;
+}
+
+
+
 
 h1{
     font-family: "helvetica-lt-pro", sans-serif;
@@ -92,19 +825,46 @@ h2{
     font-family: "helvetica-lt-pro", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 40pt;
+    font-size: 50pt;
+    padding-top: 2cm;
+    padding-left: 35px;
 }
 
 h3{
     font-family: "helvetica-lt-pro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font: size 20pt;
+    font-size: 14pt;
+    padding-left: 35px;
+    padding-bottom: 20px;
 }
 
 
 h4{
     font-family: "helvetica-lt-pro", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
+    font-size: 20pt;
+    padding-left: 35px;
+}
+
+p{
+    font-family: "helvetica-lt-pro", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14pt;
+    padding-left: 35px;
+    
+}
+
+
+#hero-background {
+
+    opacity: 1;
+    transition: ease-out 1s;
+
+}
+
+#hero-background.fade-out {
+    opacity: 0;
 }
